@@ -1,0 +1,42 @@
+<!-- 'CSS BOX MODEL' -->
+<!-- the box model is a very important concept, one that you need to understand to create a good layout. The box model is a model used by CSS to define the design and layout of elements in a web page. It consists of four parts: the content, padding, border, and margin. The content is the actual content of the element, such as text or an image. The padding is the space between the content and the border. The border is the line that surrounds the element, and the margin is the space between the border and other elements on the page. By understanding the box model, you can create a layout that is visually appealing and easy to navigate. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        background-color: rosybrown;
+        color: yellow;
+        padding: 20px;
+        border: 5px solid rgb(102, 21, 21);
+        margin: 20px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      .box2 {
+        background-color: rosybrown;
+        color: rgb(178, 27, 173);
+        padding: 20px;
+        border: 5px solid rgb(23, 147, 87);
+        margin: 30px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+
+      /*       (NOTE)  ------   Margin collapse:  ........ when two magins overlaps, the larger margin will be applied. */
+    </style>
+  </head>
+  <body>
+    <div class="box box1">i am a box</div>
+    <div class="box box2">i am a another box</div>
+  </body>
+</html>
